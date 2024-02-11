@@ -1,4 +1,4 @@
 FROM quay.io/jupyter/r-notebook:2023-11-19
 
-RUN conda install -c conda-forge pandas=1.3.1 \
-                              matplotlib=3.4.3
+RUN conda install -y python=3.8.5 && \
+    conda install -y numpy=1.21.0 pandas=1.3.0
